@@ -9,7 +9,7 @@
         <mat-card-content>
           <div class="form-section">
             <div class="auth-wrapper">
-              <h2 class="welcome-msg"> Welcome to {{'login_title' | translate}}!</h2>
+              <h2 class="welcome-msg"> Bienvenido a {{'login_title' | translate}}!</h2>
               <div class="d-flex justify-content-center lbl-alert">
                 <div>
                   <button mat-flat-button class="m-l-16 m-r-16" type="button" (click)="adminSet();">Admin</button>
@@ -18,10 +18,10 @@
                   <button mat-flat-button color="warn" type="button" (click)="employeeSet();">Employee</button>
                 </div>
               </div>
-              <h2 class="login-title">Sign in</h2>
+              <h2 class="login-title">Iniciar con:</h2>
               <form class="form-field-full" [formGroup]="loginForm">
                 <mat-form-field appearance="outline">
-                  <mat-label>{{'username' }}: admin</mat-label>
+                  <mat-label>{{'username' | translate}}: admin</mat-label>
                   <input matInput placeholder="admin" formControlName="username" required>
                   <mat-icon class="material-icons-outlined color-icon p-3" matSuffix>face</mat-icon>
                   @if (username.invalid) {
@@ -35,7 +35,7 @@
                   }
                 </mat-form-field>
                 <mat-form-field appearance="outline">
-                  <mat-label>{{'password' }}: admin</mat-label>
+                  <mat-label>{{'password' | translate}}: admin</mat-label>
                   <input matInput placeholder="admin" [type]="hide ? 'password' : 'text'" formControlName="password"
                     required>
                   <a href="#" onClick="return false;" matSuffix (click)="hide = !hide"

@@ -14,7 +14,7 @@ import { LocalStorageService } from '@shared';
         class="brand-logo align-middle m-2"
         alt="logo"
       />
-      <span class="brand-name">Luxuria</span>
+      <span class="brand-name">Pista de Hielo</span>
     </div>
   `,
   styles: [
