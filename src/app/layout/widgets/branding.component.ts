@@ -41,7 +41,7 @@ export class BrandingComponent {
     const currentUser = this.store.get('currentUser');
     const roleName = currentUser.role[0]?.name;
     if (roleName == 'ADMIN') {
-      this.router.navigate(['dashboard/dashboard1']);
+      this.router.navigate(['dashboard/dashboard']);
     } else if (roleName == 'EMPLOYEE') {
       this.router.navigateByUrl('emp_dashboard/dashboard1');
     }

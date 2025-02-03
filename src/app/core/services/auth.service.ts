@@ -78,7 +78,7 @@ export class AuthService {
         this.store.set('roleNames', roleNamesJSON);
         for (const role of this.tokenService.roleArray ?? []) {
           if (role['name'] == 'ADMIN') {
-            this.router.navigate(['dashboard/dashboard1']);
+            this.router.navigate(['dashboard/dashboard']);
             break;
           } else if (role['name'] == 'EMPLOYEE') {
             this.router.navigateByUrl('emp_dashboard/dashboard1');

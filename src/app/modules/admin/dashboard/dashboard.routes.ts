@@ -1,13 +1,18 @@
 import { Route } from '@angular/router';
-import { Dashboard1Component } from './dashboard1/dashboard1.component';
 import { Page404Component } from 'app/modules/sessions/page404/page404.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { Dashboard1Component } from './dashboard1/dashboard1.component';
 import { Dashboard2Component } from './dashboard2/dashboard2.component';
 
 export const DASHBOARD_ROUTE: Route[] = [
   {
     path: '',
-    redirectTo: 'dashboard1',
+    redirectTo: 'dashboard',
     pathMatch: 'full',
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
   },
   {
     path: 'dashboard1',
