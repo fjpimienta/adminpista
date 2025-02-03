@@ -75,8 +75,8 @@ export class TranslateComponent {
   defaultFlag?: string;
   langStoreValue?: string;
   listLang = [
+    { text: 'Spanish', flag: 'assets/images/flags/mexico.svg', lang: 'es-ES' },
     { text: 'English', flag: 'assets/images/flags/us.svg', lang: 'en-US' },
-    { text: 'Spanish', flag: 'assets/images/flags/spain.svg', lang: 'es-ES' },
     { text: 'German', flag: 'assets/images/flags/germany.svg', lang: 'de-DE' },
   ];
 
@@ -85,13 +85,13 @@ export class TranslateComponent {
     private settings: SettingsService,
     private store: LocalStorageService
   ) {
-    translate.addLangs(['en-US', 'de-DE', 'es-ES']);
+    translate.addLangs(['es-ES', 'en-US', 'de-DE']);
 
     this.langStoreValue = store.get('lang') as string;
     const val = this.listLang.filter((x) => x.lang === this.langStoreValue);
     if (val.length === 0) {
       if (this.flagvalue === undefined) {
-        this.defaultFlag = 'assets/images/flags/us.svg';
+        this.defaultFlag = 'assets/images/flags/mexico.svg';
       }
     } else {
       this.flagvalue = val.map((element) => element.flag);

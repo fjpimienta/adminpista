@@ -96,7 +96,7 @@ export class CustomizerComponent implements OnInit, OnDestroy {
     dir: 'ltr',
     sidenavOpened: true,
     sidenavCollapsed: false,
-    language: 'en-US',
+    language: 'es-ES',
   });
 
   isShowing: boolean | undefined;

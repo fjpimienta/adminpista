@@ -20,11 +20,13 @@ export class TranslateLangService {
         Promise.resolve()
       );
       locationInitialized.then(() => {
-        const browserLang = navigator.language;
-        // console.log(browserLang);
-        const defaultLang = browserLang.match(/en-US|de-DE|es-ES/)
+        // Cambia el idioma si detecta distinto a spanish. Quitar 
+        // const browserLang = navigator.language;
+        const browserLang = 'es-ES';
+        console.log(browserLang);
+        const defaultLang = browserLang.match(/es-ES|en-US|de-DE/)
           ? browserLang
-          : 'en-US';
+          : 'es-ES';
 
         this.settings.setLanguage(defaultLang);
         this.translate.setDefaultLang(defaultLang);

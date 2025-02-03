@@ -46,7 +46,7 @@ export const appConfig: ApplicationConfig = {
       })
     ),
 
-    { provide: MAT_DATE_LOCALE, useValue: 'en-GB' },
+    { provide: MAT_DATE_LOCALE, useValue: 'es-ES' },
     { provide: DateAdapter, useClass: MomentDateAdapter },
     {
       provide: MAT_DATE_FORMATS,
