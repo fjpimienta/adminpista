@@ -143,7 +143,9 @@
     "permissions.route-guard": "Route Guard",
     "permissions.test": "Permission Test",
     "devider-dashboards": "Dashboards",
-    "devider-app": "App"
+    "devider-app": "App",
+    "catalogs": "Catalogs",
+    "catalogs.skates": "Skates"
   },
   "validations": {
     "required": "This field is required",

@@ -7,20 +7,8 @@
     {
       "route": "dashboard",
       "name": "dashboard",
-      "type": "sub",
       "icon": "space_dashboard",
-      "children": [
-        {
-          "route": "dashboard1",
-          "name": "dashboard1",
-          "type": "link"
-        },
-        {
-          "route": "dashboard2",
-          "name": "dashboard2",
-          "type": "link"
-        }
-      ],
+      "type": "link",
       "permissions": {
         "only": "ADMIN"
       }
@@ -37,19 +25,19 @@
       }
     },
     {
-      "route": "",
-      "name": "sessions",
+      "route": "catalogs",
+      "name": "catalogs",
       "type": "sub",
       "icon": "error_outline",
       "children": [
         {
-          "route": "403",
-          "name": "403",
+          "route": "skates",
+          "name": "skates",
           "type": "link"
         },
         {
-          "route": "404",
-          "name": "404",
+          "route": "alumnos",
+          "name": "alumnos",
           "type": "link"
         },
         {

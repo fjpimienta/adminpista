@@ -143,7 +143,9 @@
     "permissions.route-guard": "Protección de Ruta",
     "permissions.test": "Prueba de Permiso",
     "devider-dashboards": "Tableros",
-    "devider-app": "App"
+    "devider-app": "App",
+    "catalogs": "Catálogos",
+    "catalogs.skates": "Patines"
   },
   "validations": {
     "required": "Este campo es obligatorio",
